@@ -27,7 +27,7 @@ def proof_of_work(last_proof):
 
 
     print("Searching for next proof")
-    
+
     proof = random.randint(-sys.maxsize + 5, sys.maxsize - 5)
     #  TODO: Your code here
     last_hash = hashlib.sha256(str(last_proof).encode()).hexdigest()[-6:]
